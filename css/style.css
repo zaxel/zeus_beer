@@ -1,0 +1,1035 @@
+@font-face {
+  font-family: "Amiri-Slanted";
+  font-display: swap;
+  src: url("../fonts/Amiri-Slanted.woff") format("woff"), url("../fonts/Amiri-Slanted.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amiri-Regular";
+  font-display: swap;
+  src: url("../fonts/Amiri-Regular.woff") format("woff"), url("../fonts/Amiri-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-display: swap;
+  src: url("../fonts/CinzelDecorative-Bold.woff") format("woff"), url("../fonts/CinzelDecorative-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-display: swap;
+  src: url("../fonts/CinzelDecorative-Black.woff") format("woff"), url("../fonts/CinzelDecorative-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-display: swap;
+  src: url("../fonts/CinzelDecorative-Regular.woff") format("woff"), url("../fonts/CinzelDecorative-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* make sure to set some focus styles for accessibility */
+
+:focus {
+  outline: none;
+  opacity: .6;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+  opacity: .6;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: none;
+  opacity: .6;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #000;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+  color: #b4ba98;
+  font-family: "Amiri-Slanted";
+  font-weight: normal;
+  font-size: 16px;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background: url("../img/header/header_bg.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .header_container {
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header .header_container .logo {
+  width: 153px;
+  height: 162px;
+  background: url("../img/header/logo.png") center center no-repeat;
+  margin: 0 auto;
+  padding-top: 40vh;
+}
+
+.header .header_container .slogan_container {
+  padding-top: 15px;
+  width: 35vw;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.header .header_container .slogan_container .befor_line {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  margin-right: 20px;
+}
+
+.header .header_container .slogan_container .name {
+  font-family: "Cinzel";
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin-right: 20px;
+}
+
+.header .header_container .slogan_container .after_line {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #fff;
+}
+
+.header .header_container .slogan {
+  font-family: "Cinzel";
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.header .header_container .founder {
+  font-size: 24px;
+  font-weight: 400;
+  color: #cdb378;
+}
+
+.header .header_container .scroll_container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header .header_container .scroll_container .scroll_text {
+  color: #cdb378;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.header .header_container .scroll_container .scroll_arrow {
+  margin: 0 auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.header .header_container .scroll_container .scroll_arrow::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 8px;
+  width: 12px;
+  height: 1px;
+  background: #cdb378;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .header_container .scroll_container .scroll_arrow::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 8px;
+  width: 12px;
+  height: 1px;
+  background: #cdb378;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.about_container {
+  width: 100%;
+  height: 82vh;
+  background: #1a1c0f;
+  position: relative;
+}
+
+.about_container .about_main {
+  padding-left: 11vw;
+  padding-top: 8vh;
+  width: 65vw;
+}
+
+.about_container .about_main .about_title {
+  font-family: "Cinzel";
+  font-size: 72px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.about_container .about_main .about_text {
+  font-family: "Amiri-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  color: #cdb378;
+}
+
+.about_container .right_container_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 29vw;
+  height: 62vh;
+  margin-top: -4vh;
+}
+
+.about_container .right_container_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about_container .about_bottom_container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 48vh;
+  width: 86vw;
+  background: url("../img/about/about_back.jpg") center center no-repeat;
+  -webkit-box-shadow: 1px 0px 39px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 0px 39px 3px rgba(0, 0, 0, 0.75);
+}
+
+.about_container .about_bottom_container::before {
+  padding-top: 100px;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: '';
+  margin-right: 10vw;
+  margin-bottom: -14vh;
+  width: 11vw;
+  height: 80vh;
+  background: url(../img/about/bottle.png) center center no-repeat;
+  background-size: contain;
+}
+
+.about_container .about_bottom_container .about_inner_container {
+  width: 50vw;
+  margin-left: 10vw;
+  margin-top: 7vh;
+}
+
+.about_container .about_bottom_container .about_inner_container .title {
+  color: #cdb378;
+  font-family: "Cinzel";
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.about_container .about_bottom_container .about_inner_container .text {
+  color: #b4ba98;
+  font-family: "Amiri-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48.01px;
+  margin-bottom: 40px;
+}
+
+.about_container .about_bottom_container .about_inner_container .button {
+  display: inline-block;
+  color: #fff;
+  font-family: "Amiri-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #272a18;
+  border: 2px solid #404429;
+  padding: 15px 50px;
+  margin-left: 15px;
+}
+
+.joy {
+  width: 100%;
+  height: 86vh;
+  content: '';
+  background: url("../img/joy/joy_back.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.joy .joy_container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.joy .joy_container .slogan {
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+  width: 30vw;
+  line-height: 1.2;
+  color: #1a1c0f;
+  font-family: "Cinzel";
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.facts {
+  background: #1a1c0f;
+  height: 100%;
+}
+
+.facts .facts_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.facts .facts_wrapper .facts_container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+  margin: 140px 30px 0 190px;
+}
+
+.facts .facts_wrapper .facts_container .title {
+  color: #cdb378;
+  font-family: "Cinzel";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.facts .facts_wrapper .facts_container .text {
+  color: #b4ba98;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.9;
+  font-family: "Amiri-Regular";
+}
+
+.facts .facts_wrapper .pict_container {
+  width: 49vw;
+  height: 49vw;
+  position: relative;
+}
+
+.facts .facts_wrapper .pict_container img {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  height: 100%;
+}
+
+.footer {
+  height: 230vh;
+  background: url("../img/footer/footer_bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.footer .footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_container .title {
+  color: #cdb378;
+  font-family: "Cinzel";
+  font-size: 72px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.footer .footer_container .text {
+  color: #b4ba98;
+  font-family: Amiri-Regular;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.footer .footer_container .button {
+  color: #fff;
+  font-family: Amiri-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #404429;
+  background: #272a18;
+  padding: 15px 55px;
+}
+
+@media (max-width: 1700px) {
+  .facts .facts_wrapper .pict_container img {
+    margin-right: 0;
+  }
+
+  .facts .facts_wrapper .pict_container img {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  .about_container .about_main .about_title {
+    font-size: 50px;
+  }
+
+  .about_container .about_bottom_container .about_inner_container .title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .about_container .about_bottom_container .about_inner_container .text {
+    line-height: 1;
+  }
+
+  .facts .facts_wrapper .pict_container {
+    width: 39vw;
+    height: 39vw;
+  }
+
+  .facts .facts_wrapper .pict_container img {
+    position: unset;
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about_container .about_main .about_title {
+    font-size: 35px;
+  }
+
+  .about_container .about_bottom_container .about_inner_container .title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .facts .facts_wrapper .facts_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+    margin: 8px;
+  }
+
+  .facts .facts_wrapper .pict_container {
+    margin: 8px;
+  }
+
+  .facts .facts_wrapper .pict_container img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .joy .joy_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .joy .joy_container .slogan {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 80vw;
+  }
+
+  .footer .footer_container .title {
+    font-size: 30px;
+    margin: 20px 8px 8px 8px;
+    text-align: center;
+  }
+
+  .footer .footer_container .text {
+    margin: 20px 8px 8px 8px;
+  }
+}
+
+@media (max-width: 950px) {
+  .facts .facts_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .facts .facts_wrapper .facts_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin: 8px;
+  }
+
+  .facts .facts_wrapper .facts_container .title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+
+  .facts .facts_wrapper .facts_container .text {
+    line-height: 1.5;
+  }
+
+  .facts .facts_wrapper .pict_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .about_container {
+    height: 140vh;
+  }
+
+  .about_container .about_main .about_title {
+    font-size: 35px;
+  }
+
+  .about_container .about_bottom_container {
+    height: 90vh;
+  }
+
+  .about_container .about_bottom_container .about_inner_container .title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .header_container .logo {
+    padding-top: 25vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .header .header_container .slogan {
+    font-size: 33px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
